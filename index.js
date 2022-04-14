@@ -1,7 +1,12 @@
 let {PythonShell} = require('python-shell')
 
-PythonShell.run('test.py', null, (err, data) => {
+let options = {
+    mode:'text',
+    args:['seoin','inseo','seoseo']
+}
+
+PythonShell.run('test.py', options, (err, results) => {
     if (err) throw err;
 
-    console.log(data);
+    console.log(results);
 });
