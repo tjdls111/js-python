@@ -1,4 +1,3 @@
 import sys
 
-# print('hello world!')
-print(sys.argv)
+print(int(sys.argv[1])+int(sys.argv[2]))
